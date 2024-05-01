@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "docker-image-deployer"
+name = "dudek"
 version = "0.1.0"
 description = ""
 authors = ["Athul Cyriac Ajay <athul8720@gmail.com>"]
@@ -10,6 +10,12 @@ python = "^3.11"
 docker = "^7.0.0"
 typer = "^0.12.3"
 
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.2"
+
+[tool.poetry.scripts]
+dudek = "main:cli"
 
 [build-system]
 requires = ["poetry-core"]
